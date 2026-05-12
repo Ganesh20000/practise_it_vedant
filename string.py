@@ -1,0 +1,8 @@
+a="asfafa"
+
+print(a)
+
+
+
+
+
