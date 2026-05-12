@@ -1,8 +1,0 @@
-a="asfafa"
-
-print(a)
-
-
-
-
-
