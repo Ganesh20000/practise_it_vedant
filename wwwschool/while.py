@@ -114,3 +114,32 @@ while(i<=10):
     if i==5:
         break
     print(f"i is {i}")
+
+
+num=1414
+
+n=num
+rem=0
+while n>0:
+    rem=n%10
+    n=n//10
+    print(rem,end=' ')
+print()
+if  n==rem:
+    print("palindrom")
+else:
+    print("not palindrom ")
+
+
+
+
+num=153
+
+rem=0
+rev=0
+
+while(num>0):
+    rem=num%10
+    rev=rev*10+rem
+
+print(rev,end=' ')
