@@ -114,15 +114,11 @@ print(c)
 
 
 
-l=['na','i','e','n','p','nn',47,78,4]
-
-
-
-
-
+l=[None,'i','e','n','p','NA',47,78,4]
+c=[]
 for i in l:
     if i not in ('NA',None):
-        l.append(i)
+        c.append(i)
 
-print(l)
+print(c)
 
