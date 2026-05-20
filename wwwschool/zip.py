@@ -125,3 +125,31 @@ print(l)
 
 k=reduce(lambda a,b:a if a>b else b,nums)
 print(k)
+
+
+j=[4,7,8,9,7]
+i=7
+j=78
+
+if i>j:
+    print(f"i is grater {i}")
+
+else:
+    print(f"j i greater {j}")
+
+
+
+c=[4,7,8,7,8,9]
+
+l=c[0]
+
+for i in c:
+    if i>l:
+        l=i
+
+print(l)
+
+
+c="good morining"
+
+

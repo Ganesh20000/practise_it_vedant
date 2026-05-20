@@ -122,3 +122,57 @@ for i in l:
 
 print(c)
 
+data = [('Mon',32),('Tue',35),('Wed',33),('Thu',35),('Fri',30)]
+
+
+# for i,j in data:
+    # if 
+
+
+
+data= [101,102,103,101,104,102,105,101]
+
+c=0
+for i in data:
+    if data.count(i)>1:
+        c+=1
+        
+print(c)
+
+
+
+# second largest element
+
+
+large=data[0]
+
+for i in data:
+    if i >large:
+        large=i
+
+
+# print(large)
+
+second=-1
+
+for i in data:
+    if i>second and i!=large:
+        second=i
+
+print(second)
+print(large)
+
+print("*"*50)
+#second largest
+
+
+ar=[101,102,103,101,104,102,105,101]
+
+
+
+for  i in range(len(ar)):
+    if ar[i]>=ar[i-1]:
+        print("sort")
+
+    else:
+        print('not')
