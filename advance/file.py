@@ -32,7 +32,7 @@ def  o(path,mess):
         print(fo)
         fo.close()
 
-o("t.txt","okkkk")
+# o("t.txt","okkkk")
 
 
 # file read 
@@ -44,7 +44,7 @@ def o(path):
     file.close()
 
 
-o("t.txt")
+# o("t.txt")
 
 
 
@@ -54,7 +54,7 @@ def uuu(path,mess):
         print(h)
         file.close()
 
-uuu("C:\\Users\\karli\\OneDrive\\Desktop\\all\\it_python\\tt.txt","\n python is the programming languege")
+# uuu("C:\\Users\\karli\\OneDrive\\Desktop\\all\\it_python\\tt.txt","\n python is the programming languege")
 
 
 def iii(path,path2):
@@ -70,6 +70,18 @@ def iii(path,path2):
 
 
 
-iii("C:\\Users\\karli\\OneDrive\\Desktop\\all\\it_python\\tt.txt","C:\\Users\\karli\\OneDrive\\Desktop\\all\\it_python\\t.txt")
+# iii("C:\\Users\\karli\\OneDrive\\Desktop\\all\\it_python\\tt.txt","C:\\Users\\karli\\OneDrive\\Desktop\\all\\it_python\\t.txt")
 
 
+
+
+
+with open('practise.txt','a') as file:
+    f=file.write("Hi everyone \n " \
+    "we are learning file io using java " \
+    "i like python programming")
+    print(f)
+
+
+
+    
