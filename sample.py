@@ -35,3 +35,11 @@ while(b<=nn):
     print(a,end='')
     a,b=b,a+b
     
+
+
+
+
+f=open("t.txt",'r')
+j=f.read()
+print(j)
+f.close()
