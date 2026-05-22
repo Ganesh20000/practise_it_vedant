@@ -78,10 +78,18 @@ def iii(path,path2):
 
 with open('practise.txt','a') as file:
     f=file.write("Hi everyone \n " \
-    "we are learning file io using java " \
+    "we are learning file io using java \n"
     "i like python programming")
     print(f)
 
 
 
-    
+# replace the thing
+
+with open('practise.txt','a') as file:
+    f=file.write()
+    new=f.replace("python ","java programming")
+    print(new)
+
+
+
