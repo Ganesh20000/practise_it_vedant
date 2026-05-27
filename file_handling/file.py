@@ -71,3 +71,15 @@ f2=open("copytext.txt",'a')
 for i in f1:
     f2.write(i)
     print(i)
+
+
+
+
+
+
+
+
+
+
+
+

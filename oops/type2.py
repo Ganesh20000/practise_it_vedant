@@ -115,25 +115,66 @@ b.method()
 # constructor overloading and method overloading
 
 
+# class animal:
+#     def __init__(self,name):
+#         self.name=name
+
+#     def speak(self):
+#         print(f"parent name is {self.name}")
+
+# class rat(animal):
+    
+#     def __init__(self):
+#         self.method="constructor overloading"
+#     def second(self):
+#         print(f"child method {self.name} and this called {self.method}")
+
+
+# # l=animal("PO")
+
+# # l.method()
+
+
+# k=rat()
+# k.method()
+
+
+
+
+# super keyword
+
 class animal:
     def __init__(self,name):
         self.name=name
 
-    def method(self):
+    def speak(self):
         print(f"parent name is {self.name}")
 
 class rat(animal):
     
-    def __init__(self):
-        self.name="constructor overloading"
-    def method(self):
-        print(f"child method {self.name}")
+    def __init__(self,name):
+        super().__init__(name)
+        self.method="constructor overloading"
+
+    def second(self):
+        super().speak()  # call the base class method
+        print(f"child method {self.name} and this called {self.method}")
 
 
-l=animal("PO")
+# l=animal("PO")
 
-l.method()
+# l.method()
 
 
-k=rat()
-k.method()
+k=rat("pikachu")
+k.speak()
+
+
+
+
+
+
+
+
+
+
