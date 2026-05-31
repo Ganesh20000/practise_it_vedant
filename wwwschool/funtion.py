@@ -93,3 +93,47 @@ for i in range(1,5+1):
     x=x*i
 
 print(x)
+
+
+
+#^ By default, a function must be called with the correct number of arguments.
+
+# *args and **kwargs allow functions to accept a unknown number of arguments.
+
+def myfun(*arg):
+    print(f"this is the args  {arg[3]} ")
+
+
+myfun('kara','lora','sora','fora')
+
+
+
+def myfun(*args):
+    print(f'type of {type(args)}')
+    print(f" first argument {args[0]}")
+    print(f" second argument {args[2]}")
+    print(f"all argument {args}")
+
+
+myfun('kara','lora','sora','fora')
+
+
+
+def sum(*arg):
+    Total=0
+
+    for i in arg:
+        Total+=i
+    print(Total)
+    
+
+sum(4,4,7,88,99,88,88)
+
+# f you do not know how many keyword arguments will be passed into your function, add two asterisks ** 
+
+def myfun(**arg):
+    print("type ",type(arg))
+    print(f"my name ",arg["name"])
+    print(f"my age ",arg['age'])
+
+myfun(name='piky',age=78)
