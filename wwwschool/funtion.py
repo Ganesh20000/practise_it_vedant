@@ -137,3 +137,29 @@ def myfun(**arg):
     print(f"my age ",arg['age'])
 
 myfun(name='piky',age=78)
+
+print("*"*50)
+
+#! **kwargs with regular arguments 
+def regurlar(user,**kwargs):
+    print(f'user name is {user}')
+    for i ,j in kwargs.items():
+        print(" ", i +" :" , j)
+
+
+
+regurlar("karla",age='4' ,id='70',name='suresh')
+
+
+
+
+#! all together
+
+def mufun(a,*arg,**kwarg):
+    print(f"my  {a}")
+    print(f"is full ",arg)
+
+    print(f" this is dict:",kwarg)
+
+mufun("kala","karoa","Loara","para",asa='adad',l='arasdf',age=28)
+
